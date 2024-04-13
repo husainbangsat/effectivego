@@ -34,7 +34,6 @@ func (u *URL) Hostname() string {
 	return u.Host[:i]
 }
 
-// Port will retrieve port from host
 func (u *URL) Port() string {
 	i := strings.Index(u.Host, ":")
 	if i < 0 {
